@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>formulario</title>
+	<meta charset="utf-8">
+</head>
+<body>
+    <form name="FormularioPrimeiro" method="GET" action="localhost">
+       <!-- O metodo GET envia os dados da pagia via URL é mais utilizado em consultas (Veeja no google)
+       	O metodo POST envia via arquivo, é mais seguro quando se trata de realizar transações,cadastros
+        LocalHost seria o servidor local-->
+ <fieldset>
+ 	   <label for="txtName">Nome: </label>
+ 	   <input type="text" id="txtName" name="txtName" required="required" size="100" maxlength="100"> <br>
+ 	   <label for="txtSenha">Senha: </label>
+ 	   <input type="password" id="txtSenha" name="txtSenha"><br>
+ 	   <label for="txtEmail">E-mail: </label>
+ 	   <input type="email" name="txtEmail" id="txtEmail" onerror="alert('Preencha o campo e-mail')" readonly="readonly"><br> 
+
+ 	   				<!-- Atributos formulario -->
+ 	   <!-- para desabilitar disabled="disabled"  -->
+ 	   <!-- READONLY="readonly" Para ser somente leitura -->
+ 	   <!-- MAXLENGHT="maxlenght Para configurar a quantidade maxima de caracteres" -->
+ 	   <!-- Size="" Aumenta o tamanho da caixinha visual -->
+ 	   <!-- Required="required" Para indicar campo obrigatorop -->
+ 	   <!-- Value="" Colocar um valor padrão para aparecer na caixa de texto -->
+ 	   <!-- autofocus="autofocus" Para automaticamente o foco do cursor ir para determinada caixa -->
+ 	   <!-- Placeholder="para pedir um requisito" -->
+
+ 	   <label for="txtNome">URL: </label> 
+ 	   <input type="url" id="txtUrl" name="txtUrl"><br>
+       <input type="hidden" name="campoOculto" value="100"><br><br>
+ </fieldset>
+
+   <fieldset>
+    <legend>Carros:</legend>
+       <label for="ckbFerrari">Ferrari: </label>
+       <input type="checkbox" name="ckbCarros" value="Ferrari" id="ckbFerrari" /> <br/>
+       <label for="ckbCamaro">Camaro: </label>
+       <input type="checkbox" name="ckbCarros" value="Camaro" id="ckbCamaro" /><br/>
+       <label for="ckbCelta">Celta: </label>
+       <input type="checkbox" name="ckbCarros" value="Celta" id="ckbCelta" /> <br/>
+       <label for="ckbUno">Uno: </label>
+       <input type="checkbox" name="ckbCarros" value="Uno" id="ckbUno" />
+   </fieldset>
+
+   <fieldset>
+       <legend>Sexo:</legend>
+       <label for="rdFeminino">Feminino: </label>
+       <input type="radio" name="rdSexo" value="F" id="rdFeminino" />
+       <label for="rdMasculino">Masculino: </label>
+       <input type="radio" name="rdSexo" value="M" id="rdMasculino" />
+   </fieldset>
+
+   <fieldset>
+       <legend>Outros</legend>
+        <label for="ltfrutas">Frutas</label>
+        <input list="frutas" name="ltfrutas" id="ltfrutas">
+          <datalist id="frutas">
+          	
+             <option value="Maça"> </option>
+             <option value="Banana"> </option>
+             <option value="Morango"> </option>
+             <option value="Melancia"> </option>
+             <option value="Pera"> </option>
+             <option value="Uva"> </option>
+          </datalist> <br/>
+
+        <label>Linguagem de programação</label>
+        <select name="cbxLP">
+        	<option>PHP</option>
+        	<option>Python</option>
+        	<option>Java Script</option>
+        	<option>Java</option>
+        </select> <br/>
+
+        <label>LP com grupos: </label>
+        <select name="cbxLP2">
+        	<optgroup label="LP - Server">
+        	 <option>PHP</option>
+        	 <option>Python</option>
+        	 <option>Java</option>
+        	</optgroup>
+        	<optgroup label="LP - Client">
+        		<option>Java Script</option>
+        	</optgroup>
+        </select> <br/>
+
+       <label for="txtArquivo"> Selecione o arquivo: </label>
+      <input type="file" name="txtArquivo" id="txtArquivo" />
+   </fieldset>
+   <fieldset>
+   	   <legend>reclamação:</legend>
+   	   <textarea rows="8" col="70"></textarea>
+   </fieldset>
+<hr/>
+ 	<!-- Quando salvar os dados do formulario deve se usar o submit, o button deve ser utilizado em outras ocasiões-->
+ 	 <input type="submit" value="enviar"/>
+ 	 <input type="button" name="btnOla" value="Clique aqui" onclick="alert('Olá!!! Tudo bem???')"/>
+     <input type="image" name="btnimagem" src="BINARIO.jpg" width="10%" height="20%"> <br/>
+          <button name="btnImg" onclick="alert('Binarinho')">
+              <img src="BINARIO.jpg" width="30%" height="30%">
+          </button>
+ </form>
+</body>
+</html>
