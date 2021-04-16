@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tag_semantica</title>
+        <link rel="icon" href="flor.ico" type="img/ico"/>
+    </head>
+    <body>
+        <header>Header || Cabeçalho</header>
+        <hgroup>
+            hgroup
+            <h1> titulo 1</h1>
+            <h3> titulo 3</h3>
+        </hgroup>
+        <section>
+            <header>Inicio da seção</header> 
+            <br/>
+            <article> 
+                bloco de texto qualquer sem cabecalho para o exemplo
+            <br/>........ no artigo 1
+                .......<br/>
+            </article>
+            <hr/>
+            <article> 
+               <header>artigo 2</header> 
+            bloco de texto com Cabeçalho artigo 2 sem formatação
+            <br/> ..........................
+            <br/>...............................
+            </article>
+            <hr/>
+            <article> 
+                <h1> primeiro nivel titulo</h1>
+                <h2>segundo nivel titulo</h2>
+                <h3>terceiro nivel titulo</h3>
+                <h4>quarto nivel titulo</h4>
+                <h5>quinto nivel titulo</h5>
+                <h6>sexto nivel titulo</h6>
+            </article>
+            <hr/>
+            <article> 
+                <div>
+                    <header> Estamos falando sobre tags de formatação</header>
+                    <!--tag de bloco uma divisão generica
+                    normalmente usamos a div para uma formatação
+                    de conteudo e layout diferemnte do esperado
+                    em algum lugar da pagina-->
+                    estou escrevendo um texto em Pt e 
+                    de repente mudo para outro idioma 
+                    <br/> <em>i can't see anything now</em>
+                    <br/> <strong>para dar enfase com negrito</strong> 
+                    <br/> a tag b deve ser <b>evitada</b> pq seria marcar texto
+                    <br/> a tag i deve ser <i>evitada</i> pq seria marcar texto
+                </div>
+                <br/>
+                Tag Code:
+                <br/>
+                <code>
+                    nome = input("digite seu nome:") <br/>
+                    idade = int(input("digite sua idade:"))
+                </code>
+                <br/><br/>
+                tag samp: <br/>
+                <samp>
+                    digite seu nome: jessica <br/>
+                    digite sua idade:
+                </samp>
+                <br/>
+                <br/>
+                Tag kdb: 
+                <kbd>
+                    <!--teclas de  atalho do computador-->
+                    CTRL+C  ctrl+v Ctrl+x
+                </kdb>
+                <br/>
+                <br/>
+                Tag var: <br/>
+                <var> 
+                    <!--tag para mostrar a criação de variaveis em pseudocodigo-->
+                    int a,b,c; <br/>
+                    float soma, media; <br/>
+                </var>
+                <br/> 
+                Outras tags: 
+                <mark>marca texto</mark>
+                <del>deleta texto</del> <!--taxado ou riscar a palavra-->
+                <ins>insiro texto</ins> <!--tag u ou underline -->
+            </article>
+            <hr/>
+            <article> 
+                <header>Trabalhando com imagens</header>
+                 <figure>
+                     <img src="flor.jpg" alt="imagem de uma Flor do deserto"
+                          width="50%" height="50%" />
+                     <figcaption>legenda da imagem</figcaption>
+                 </figure>
+            </article>
+            <hr/>
+            <article> 
+                <header> Trabalhando com lista numerada e não numerada</header>
+                  <ol> <!--lista numerada-->
+                      <li> item 1</li>
+                      <li>item 2</li>
+                      <li>....</li>
+                      <li>item n</li>
+                  </ol>
+                  <ul> <!--lista não numerada-->
+                      <li>item 1</li>
+                      <li>item 2</li>
+                      <li>........</li>
+                      <li>item n</li>
+                  </ul>
+            </article>
+            <footer>Fim da seção</footer>
+            <!--Salvar com outro nome não pode ser index.html-->
+        </section>
+        <hr/>
+        <section>
+            <header> nova section ## TABELA##</header>
+            <br/>
+             <table border="1"> 
+                 <!--border é a largura da borda da tabela-->
+                 <tr> <!-- cria primeiro a linha -->
+                     <td>coluna 1 L.1</td>
+                     <td>coluna 2 L1</td>
+                 </tr>
+                 <tr>
+                     <td>coluna 1 L2</td>
+                     <td>coluna 2 L2</td>
+                 </tr>
+             </table> 
+             <br/> <br/>
+             <table border="2">
+                 <thead><!--cabecalho da tabela-->
+                    <tr>
+                        <th>Cabeçalho1</th>
+                        <th>cabeçalho2</th>
+                    </tr>
+                 </thead>
+                 <tfoot><!--ultima linha-->
+                     <tr>
+                         <td> fim1</td>
+                         <td> fim2</td>
+                     </tr>
+                 </tfoot>
+                 <tbody><!--corpo ou meio da tabela-->
+                    <tr> 
+                        <td>coluna 1 L.1</td>
+                        <td>coluna 2 L1</td>
+                    </tr>
+                    <tr>
+                        <td>coluna 1 L2</td>
+                        <td>coluna 2 L2</td>
+                    </tr>
+                 </tbody>
+             </table>
+        </section>
+        <p> colocando imagens com link absoluto da internet </p>
+        <img  id="imgGirassol"
+        src="http://obviousmag.org/em_cada_esquina/2019/11/27/25bae4_o-que-fazer-quando-a-flor-do-girassol-morre.jpg"
+             width="50%" height="50%"  title="Girassol Lindoooooo!!"
+             alt = "foto girassol link absoluto"/>    
+       
+     <p> Colocando imagens com link relativo</p>
+     <figure>
+       <img id="imgRel"
+           src="flor.jpg"  alt="rosa do deserto de novo"
+            width="50%" height="50%"
+            style="align-content:center;"
+            title = "flor de sempre"
+            align="right"/>
+        </figure>    
+        <br/>    
+       <hr/>
+       <a href="index.html">Home</a> | 
+       <a href="com_div.html">pagina div local</a>
+       <a href="https://www.google.com/" target="_blank">pesquise no Google</a> |
+            </body>
+</html>
